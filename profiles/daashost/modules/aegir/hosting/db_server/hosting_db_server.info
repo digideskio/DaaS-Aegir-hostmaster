@@ -1,0 +1,16 @@
+name = Database Server 
+description = Allow Hostmaster to configure database servers.
+package = Hosting
+dependencies[] = hosting
+
+core = 7.x
+files[] = hosting_db_server.service.inc
+files[] = hosting_db_server_handler_filter_db_server_type.inc
+
+
+; Information added by drush on 2015-06-02
+version = "7.x-3.0-beta2+0-dev"
+core = "7.x"
+project = "hosting"
+datestamp = "1433228183"
+
