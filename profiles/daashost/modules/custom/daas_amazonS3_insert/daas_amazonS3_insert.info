@@ -1,6 +1,0 @@
-name = DAAS Amazon S3 Bucket Insert
-description = Inserts config and code to Amazon S3 bucket
-package = DAAS Custom modules
-dependencies[] = libraries
-
-core = 7.x
