@@ -45,9 +45,3 @@ dependencies[] = devel
 dependencies[] = devel_debug_log
 
 
-; Information added by drush on 2015-06-23
-version = "7.x-3.0-beta2+0-dev"
-core = "7.x"
-project = "Daashost"
-
-
