@@ -21,9 +21,14 @@ function daashost_install() {
   
   // Finalize and setup themes, optional modules etc
   daashost_task_finalize();
-
 }
 
+/**
+ * Bootstraping function.
+ *
+ * This function creates the daashost platform, package and the Aegir master
+ * site nodes.
+ */
 function daashost_bootstrap() {
   /* Default node types and default node */
   $types = node_types_rebuild();
@@ -60,7 +65,7 @@ function daashost_bootstrap() {
     'available' => 1
   ));
   
-  /* examine the db server associated with the hostmaster site */
+  /* examine the db server associated with the daashost site */
   $db_server = d()->db_server;
   $master_db = parse_url($db_server->master_db);
   /*
@@ -98,7 +103,7 @@ function daashost_bootstrap() {
   variable_set('hosting_default_db_server', $db_node->nid);
   variable_set('hosting_own_db_server', $db_node->nid);
   
-  // Create the hostmaster platform & packages
+  // Create the daashost platform & packages
   $node = new stdClass();
   $node->uid = 1;
   $node->title = 'Drupal';
@@ -137,7 +142,7 @@ function daashost_bootstrap() {
   $instance->platform = $platform_id;
   hosting_package_instance_save($instance);
   
-  // Create the hostmaster profile package node
+  // Create the daashost profile package node
   $node = new stdClass();
   $node->uid = 1;
   $node->title = 'daashost';
@@ -204,6 +209,9 @@ function daashost_bootstrap() {
   variable_set('install_url', $GLOBALS['base_url']);
 }
 
+/**
+ * Function for setting up the default theme and menu options.
+ */
 function daashost_task_finalize() {
   variable_set('install_profile', 'daashost');
   
@@ -227,11 +235,13 @@ function daashost_task_finalize() {
   variable_set('menu_options_platform', array());
   variable_set('menu_options_server', array());
   variable_set('menu_options_site', array());
-
 }
 
 /**
- * Helper function to place block.
+ * Helper function to place blocks.
+ *
+ * @param string $theme
+ *        theme name.
  */
 function daashost_place_blocks($theme) {
   $blocks = array(
@@ -244,7 +254,7 @@ function daashost_place_blocks($theme) {
       'region' => -1, 
       'visibility' => 0, 
       'pages' => '', 
-      'title' => '',
+      'title' => '', 
       'cache' => -1
     ), 
     array(
@@ -256,7 +266,7 @@ function daashost_place_blocks($theme) {
       'region' => -1, 
       'visibility' => 0, 
       'pages' => '', 
-      'title' => '',
+      'title' => '', 
       'cache' => -1
     ), 
     array(
@@ -268,7 +278,7 @@ function daashost_place_blocks($theme) {
       'region' => -1, 
       'visibility' => 0, 
       'pages' => '', 
-      'title' => '',
+      'title' => '', 
       'cache' => -1
     ), 
     array(
@@ -280,7 +290,7 @@ function daashost_place_blocks($theme) {
       'region' => -1, 
       'visibility' => 0, 
       'pages' => '', 
-      'title' => '',
+      'title' => '', 
       'cache' => -1
     ), 
     array(
@@ -291,8 +301,8 @@ function daashost_place_blocks($theme) {
       'weight' => 0, 
       'region' => 'sidebar_first', 
       'visibility' => 0, 
-      'pages' => '',
-      'title' => '<none>',
+      'pages' => '', 
+      'title' => '<none>', 
       'cache' => -1
     ), 
     array(
@@ -304,7 +314,7 @@ function daashost_place_blocks($theme) {
       'region' => 'sidebar_second', 
       'visibility' => 0, 
       'pages' => '', 
-      'title' => '',
+      'title' => '', 
       'cache' => -1
     )
   );
@@ -318,7 +328,7 @@ function daashost_place_blocks($theme) {
     'region', 
     'visibility', 
     'pages', 
-    'title',
+    'title', 
     'cache'
   ));
   
@@ -326,5 +336,4 @@ function daashost_place_blocks($theme) {
     $query->values($block);
   }
   $query->execute();
-
 }
