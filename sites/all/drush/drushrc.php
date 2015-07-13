@@ -6,8 +6,9 @@ $options['sites'] = array (
 );
 $options['profiles'] = array (
   0 => 'hostmaster',
-  1 => 'standard',
-  2 => 'minimal',
+  1 => 'daashost',
+  2 => 'standard',
+  3 => 'minimal',
 );
 $options['packages'] = array (
   'base' => 
@@ -16,7 +17,7 @@ $options['packages'] = array (
     array (
       'tracker' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/tracker/tracker.module',
+        'filename' => '/var/aegir/hostmaster/modules/tracker/tracker.module',
         'basename' => 'tracker.module',
         'name' => 'tracker',
         'info' => 
@@ -44,7 +45,7 @@ $options['packages'] = array (
       ),
       'contextual' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/contextual/contextual.module',
+        'filename' => '/var/aegir/hostmaster/modules/contextual/contextual.module',
         'basename' => 'contextual.module',
         'name' => 'contextual',
         'info' => 
@@ -71,7 +72,7 @@ $options['packages'] = array (
       ),
       'menu' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/menu/menu.module',
+        'filename' => '/var/aegir/hostmaster/modules/menu/menu.module',
         'basename' => 'menu.module',
         'name' => 'menu',
         'info' => 
@@ -99,7 +100,7 @@ $options['packages'] = array (
       ),
       'translation' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/translation/translation.module',
+        'filename' => '/var/aegir/hostmaster/modules/translation/translation.module',
         'basename' => 'translation.module',
         'name' => 'translation',
         'info' => 
@@ -127,7 +128,7 @@ $options['packages'] = array (
       ),
       'file' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/file/file.module',
+        'filename' => '/var/aegir/hostmaster/modules/file/file.module',
         'basename' => 'file.module',
         'name' => 'file',
         'info' => 
@@ -155,7 +156,7 @@ $options['packages'] = array (
       ),
       'poll' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/poll/poll.module',
+        'filename' => '/var/aegir/hostmaster/modules/poll/poll.module',
         'basename' => 'poll.module',
         'name' => 'poll',
         'info' => 
@@ -189,7 +190,7 @@ $options['packages'] = array (
       ),
       'user' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/user/user.module',
+        'filename' => '/var/aegir/hostmaster/modules/user/user.module',
         'basename' => 'user.module',
         'name' => 'user',
         'info' => 
@@ -226,7 +227,7 @@ $options['packages'] = array (
       ),
       'blog' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/blog/blog.module',
+        'filename' => '/var/aegir/hostmaster/modules/blog/blog.module',
         'basename' => 'blog.module',
         'name' => 'blog',
         'info' => 
@@ -253,7 +254,7 @@ $options['packages'] = array (
       ),
       'search' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/search/search.module',
+        'filename' => '/var/aegir/hostmaster/modules/search/search.module',
         'basename' => 'search.module',
         'name' => 'search',
         'info' => 
@@ -289,7 +290,7 @@ $options['packages'] = array (
       ),
       'rdf' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/rdf/rdf.module',
+        'filename' => '/var/aegir/hostmaster/modules/rdf/rdf.module',
         'basename' => 'rdf.module',
         'name' => 'rdf',
         'info' => 
@@ -316,7 +317,7 @@ $options['packages'] = array (
       ),
       'filter' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/filter/filter.module',
+        'filename' => '/var/aegir/hostmaster/modules/filter/filter.module',
         'basename' => 'filter.module',
         'name' => 'filter',
         'info' => 
@@ -345,7 +346,7 @@ $options['packages'] = array (
       ),
       'simpletest' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/simpletest/simpletest.module',
+        'filename' => '/var/aegir/hostmaster/modules/simpletest/simpletest.module',
         'basename' => 'simpletest.module',
         'name' => 'simpletest',
         'info' => 
@@ -421,7 +422,7 @@ $options['packages'] = array (
       ),
       'overlay' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/overlay/overlay.module',
+        'filename' => '/var/aegir/hostmaster/modules/overlay/overlay.module',
         'basename' => 'overlay.module',
         'name' => 'overlay',
         'info' => 
@@ -444,7 +445,7 @@ $options['packages'] = array (
       ),
       'shortcut' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/shortcut/shortcut.module',
+        'filename' => '/var/aegir/hostmaster/modules/shortcut/shortcut.module',
         'basename' => 'shortcut.module',
         'name' => 'shortcut',
         'info' => 
@@ -472,7 +473,7 @@ $options['packages'] = array (
       ),
       'node' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/node/node.module',
+        'filename' => '/var/aegir/hostmaster/modules/node/node.module',
         'basename' => 'node.module',
         'name' => 'node',
         'info' => 
@@ -509,7 +510,7 @@ $options['packages'] = array (
       ),
       'locale' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/locale/locale.module',
+        'filename' => '/var/aegir/hostmaster/modules/locale/locale.module',
         'basename' => 'locale.module',
         'name' => 'locale',
         'info' => 
@@ -537,7 +538,7 @@ $options['packages'] = array (
       ),
       'update' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/update/update.module',
+        'filename' => '/var/aegir/hostmaster/modules/update/update.module',
         'basename' => 'update.module',
         'name' => 'update',
         'info' => 
@@ -565,7 +566,7 @@ $options['packages'] = array (
       ),
       'field_ui' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field_ui/field_ui.module',
+        'filename' => '/var/aegir/hostmaster/modules/field_ui/field_ui.module',
         'basename' => 'field_ui.module',
         'name' => 'field_ui',
         'info' => 
@@ -593,7 +594,7 @@ $options['packages'] = array (
       ),
       'contact' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/contact/contact.module',
+        'filename' => '/var/aegir/hostmaster/modules/contact/contact.module',
         'basename' => 'contact.module',
         'name' => 'contact',
         'info' => 
@@ -621,7 +622,7 @@ $options['packages'] = array (
       ),
       'help' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/help/help.module',
+        'filename' => '/var/aegir/hostmaster/modules/help/help.module',
         'basename' => 'help.module',
         'name' => 'help',
         'info' => 
@@ -648,7 +649,7 @@ $options['packages'] = array (
       ),
       'options' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field/modules/options/options.module',
+        'filename' => '/var/aegir/hostmaster/modules/field/modules/options/options.module',
         'basename' => 'options.module',
         'name' => 'options',
         'info' => 
@@ -676,7 +677,7 @@ $options['packages'] = array (
       ),
       'number' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field/modules/number/number.module',
+        'filename' => '/var/aegir/hostmaster/modules/field/modules/number/number.module',
         'basename' => 'number.module',
         'name' => 'number',
         'info' => 
@@ -704,7 +705,7 @@ $options['packages'] = array (
       ),
       'field_sql_storage' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field/modules/field_sql_storage/field_sql_storage.module',
+        'filename' => '/var/aegir/hostmaster/modules/field/modules/field_sql_storage/field_sql_storage.module',
         'basename' => 'field_sql_storage.module',
         'name' => 'field_sql_storage',
         'info' => 
@@ -733,7 +734,7 @@ $options['packages'] = array (
       ),
       'list' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field/modules/list/list.module',
+        'filename' => '/var/aegir/hostmaster/modules/field/modules/list/list.module',
         'basename' => 'list.module',
         'name' => 'list',
         'info' => 
@@ -762,7 +763,7 @@ $options['packages'] = array (
       ),
       'text' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field/modules/text/text.module',
+        'filename' => '/var/aegir/hostmaster/modules/field/modules/text/text.module',
         'basename' => 'text.module',
         'name' => 'text',
         'info' => 
@@ -791,7 +792,7 @@ $options['packages'] = array (
       ),
       'field' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/field/field.module',
+        'filename' => '/var/aegir/hostmaster/modules/field/field.module',
         'basename' => 'field.module',
         'name' => 'field',
         'info' => 
@@ -830,7 +831,7 @@ $options['packages'] = array (
       ),
       'system' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/system/system.module',
+        'filename' => '/var/aegir/hostmaster/modules/system/system.module',
         'basename' => 'system.module',
         'name' => 'system',
         'info' => 
@@ -864,7 +865,7 @@ $options['packages'] = array (
       ),
       'toolbar' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/toolbar/toolbar.module',
+        'filename' => '/var/aegir/hostmaster/modules/toolbar/toolbar.module',
         'basename' => 'toolbar.module',
         'name' => 'toolbar',
         'info' => 
@@ -887,7 +888,7 @@ $options['packages'] = array (
       ),
       'path' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/path/path.module',
+        'filename' => '/var/aegir/hostmaster/modules/path/path.module',
         'basename' => 'path.module',
         'name' => 'path',
         'info' => 
@@ -915,7 +916,7 @@ $options['packages'] = array (
       ),
       'syslog' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/syslog/syslog.module',
+        'filename' => '/var/aegir/hostmaster/modules/syslog/syslog.module',
         'basename' => 'syslog.module',
         'name' => 'syslog',
         'info' => 
@@ -943,7 +944,7 @@ $options['packages'] = array (
       ),
       'openid' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/openid/openid.module',
+        'filename' => '/var/aegir/hostmaster/modules/openid/openid.module',
         'basename' => 'openid.module',
         'name' => 'openid',
         'info' => 
@@ -970,7 +971,7 @@ $options['packages'] = array (
       ),
       'dblog' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/dblog/dblog.module',
+        'filename' => '/var/aegir/hostmaster/modules/dblog/dblog.module',
         'basename' => 'dblog.module',
         'name' => 'dblog',
         'info' => 
@@ -997,7 +998,7 @@ $options['packages'] = array (
       ),
       'aggregator' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/aggregator/aggregator.module',
+        'filename' => '/var/aegir/hostmaster/modules/aggregator/aggregator.module',
         'basename' => 'aggregator.module',
         'name' => 'aggregator',
         'info' => 
@@ -1032,7 +1033,7 @@ $options['packages'] = array (
       ),
       'statistics' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/statistics/statistics.module',
+        'filename' => '/var/aegir/hostmaster/modules/statistics/statistics.module',
         'basename' => 'statistics.module',
         'name' => 'statistics',
         'info' => 
@@ -1060,7 +1061,7 @@ $options['packages'] = array (
       ),
       'dashboard' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/dashboard/dashboard.module',
+        'filename' => '/var/aegir/hostmaster/modules/dashboard/dashboard.module',
         'basename' => 'dashboard.module',
         'name' => 'dashboard',
         'info' => 
@@ -1089,7 +1090,7 @@ $options['packages'] = array (
       ),
       'taxonomy' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/taxonomy/taxonomy.module',
+        'filename' => '/var/aegir/hostmaster/modules/taxonomy/taxonomy.module',
         'basename' => 'taxonomy.module',
         'name' => 'taxonomy',
         'info' => 
@@ -1119,7 +1120,7 @@ $options['packages'] = array (
       ),
       'forum' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/forum/forum.module',
+        'filename' => '/var/aegir/hostmaster/modules/forum/forum.module',
         'basename' => 'forum.module',
         'name' => 'forum',
         'info' => 
@@ -1156,7 +1157,7 @@ $options['packages'] = array (
       ),
       'block' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/block/block.module',
+        'filename' => '/var/aegir/hostmaster/modules/block/block.module',
         'basename' => 'block.module',
         'name' => 'block',
         'info' => 
@@ -1184,7 +1185,7 @@ $options['packages'] = array (
       ),
       'php' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/php/php.module',
+        'filename' => '/var/aegir/hostmaster/modules/php/php.module',
         'basename' => 'php.module',
         'name' => 'php',
         'info' => 
@@ -1211,7 +1212,7 @@ $options['packages'] = array (
       ),
       'image' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/image/image.module',
+        'filename' => '/var/aegir/hostmaster/modules/image/image.module',
         'basename' => 'image.module',
         'name' => 'image',
         'info' => 
@@ -1240,7 +1241,7 @@ $options['packages'] = array (
       ),
       'trigger' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/trigger/trigger.module',
+        'filename' => '/var/aegir/hostmaster/modules/trigger/trigger.module',
         'basename' => 'trigger.module',
         'name' => 'trigger',
         'info' => 
@@ -1268,7 +1269,7 @@ $options['packages'] = array (
       ),
       'book' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/book/book.module',
+        'filename' => '/var/aegir/hostmaster/modules/book/book.module',
         'basename' => 'book.module',
         'name' => 'book',
         'info' => 
@@ -1303,7 +1304,7 @@ $options['packages'] = array (
       ),
       'comment' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/comment/comment.module',
+        'filename' => '/var/aegir/hostmaster/modules/comment/comment.module',
         'basename' => 'comment.module',
         'name' => 'comment',
         'info' => 
@@ -1340,7 +1341,7 @@ $options['packages'] = array (
       ),
       'color' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/modules/color/color.module',
+        'filename' => '/var/aegir/hostmaster/modules/color/color.module',
         'basename' => 'color.module',
         'name' => 'color',
         'info' => 
@@ -1370,7 +1371,7 @@ $options['packages'] = array (
     array (
       'stark' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/themes/stark/stark.info',
+        'filename' => '/var/aegir/hostmaster/themes/stark/stark.info',
         'basename' => 'stark.info',
         'name' => 'Stark',
         'info' => 
@@ -1395,7 +1396,7 @@ $options['packages'] = array (
       ),
       'bartik' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/themes/bartik/bartik.info',
+        'filename' => '/var/aegir/hostmaster/themes/bartik/bartik.info',
         'basename' => 'bartik.info',
         'name' => 'Bartik',
         'info' => 
@@ -1450,7 +1451,7 @@ $options['packages'] = array (
       ),
       'garland' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/themes/garland/garland.info',
+        'filename' => '/var/aegir/hostmaster/themes/garland/garland.info',
         'basename' => 'garland.info',
         'name' => 'Garland',
         'info' => 
@@ -1483,7 +1484,7 @@ $options['packages'] = array (
       ),
       'seven' => 
       array (
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/themes/seven/seven.info',
+        'filename' => '/var/aegir/hostmaster/themes/seven/seven.info',
         'basename' => 'seven.info',
         'name' => 'Seven',
         'info' => 
@@ -1538,7 +1539,7 @@ $options['packages'] = array (
       'hostmaster' => 
       array (
         'name' => 'hostmaster',
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/hostmaster.profile',
+        'filename' => '/var/aegir/hostmaster/profiles/hostmaster/hostmaster.profile',
         'project' => 'hostmaster',
         'info' => 
         array (
@@ -1588,10 +1589,64 @@ $options['packages'] = array (
         ),
         'version' => '7.x-3.0-beta2+1-dev',
       ),
+      'daashost' => 
+      array (
+        'name' => 'daashost',
+        'filename' => '/var/aegir/hostmaster/profiles/daashost/daashost.profile',
+        'project' => '',
+        'info' => 
+        array (
+          'name' => 'Daashost',
+          'description' => 'Select this profile to manage the installation and maintenance of hosted Drupal sites.',
+          'core' => '7.x',
+          'exclusive' => true,
+          'dependencies' => 
+          array (
+            0 => 'block',
+            1 => 'color',
+            2 => 'filter',
+            3 => 'help',
+            4 => 'menu',
+            5 => 'node',
+            6 => 'overlay',
+            7 => 'system',
+            8 => 'user',
+            9 => 'hosting',
+            10 => 'hosting_task',
+            11 => 'hosting_client',
+            12 => 'hosting_db_server',
+            13 => 'hosting_package',
+            14 => 'hosting_platform',
+            15 => 'hosting_site',
+            16 => 'hosting_web_server',
+            17 => 'hosting_server',
+            18 => 'admin_menu',
+            19 => 'betterlogin',
+            20 => 'overlay_paths',
+            21 => 'views',
+            22 => 'views_bulk_operations',
+            23 => 'actions_permissions',
+            24 => 'r4032login',
+            25 => 'libraries',
+            26 => 'daas_amazonS3_insert',
+            27 => 'views_ui',
+            28 => 'dblog',
+            29 => 'devel',
+            30 => 'devel_debug_log',
+          ),
+          'version' => NULL,
+          'php' => '5.2.4',
+          'languages' => 
+          array (
+            0 => 'en',
+          ),
+        ),
+        'version' => '7.38',
+      ),
       'standard' => 
       array (
         'name' => 'standard',
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/standard/standard.profile',
+        'filename' => '/var/aegir/hostmaster/profiles/standard/standard.profile',
         'project' => 'drupal',
         'info' => 
         array (
@@ -1637,7 +1692,7 @@ $options['packages'] = array (
       'minimal' => 
       array (
         'name' => 'minimal',
-        'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/minimal/minimal.profile',
+        'filename' => '/var/aegir/hostmaster/profiles/minimal/minimal.profile',
         'project' => 'drupal',
         'info' => 
         array (
@@ -1677,9 +1732,40 @@ $options['packages'] = array (
     array (
       'modules' => 
       array (
+      ),
+      'themes' => 
+      array (
+      ),
+    ),
+    'daashost' => 
+    array (
+      'modules' => 
+      array (
+        'daas_amazonS3_insert' => 
+        array (
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/custom/daas_amazonS3_insert/daas_amazonS3_insert.module',
+          'basename' => 'daas_amazonS3_insert.module',
+          'name' => 'daas_amazonS3_insert',
+          'info' => 
+          array (
+            'name' => 'DAAS Amazon S3 Bucket Insert',
+            'description' => 'Inserts config and code to Amazon S3 bucket',
+            'package' => 'DAAS Custom modules',
+            'dependencies' => 
+            array (
+              0 => 'libraries',
+            ),
+            'core' => '7.x',
+            'version' => NULL,
+            'php' => '5.2.4',
+          ),
+          'schema_version' => 0,
+          'project' => '',
+          'version' => NULL,
+        ),
         'hosting_remote_import' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting_remote_import/hosting_remote_import.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting_remote_import/hosting_remote_import.module',
           'basename' => 'hosting_remote_import.module',
           'name' => 'hosting_remote_import',
           'info' => 
@@ -1694,7 +1780,7 @@ $options['packages'] = array (
             ),
             'version' => '7.x-3.0-alpha1+0-dev',
             'project' => 'hosting_remote_import',
-            'datestamp' => '1436057211',
+            'datestamp' => '1433228195',
             'dependencies' => 
             array (
             ),
@@ -1704,83 +1790,9 @@ $options['packages'] = array (
           'project' => 'hosting_remote_import',
           'version' => '7.x-3.0-alpha1+0-dev',
         ),
-        'hosting_git_checkout' => 
-        array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting_git/checkout/hosting_git_checkout.module',
-          'basename' => 'hosting_git_checkout.module',
-          'name' => 'hosting_git_checkout',
-          'info' => 
-          array (
-            'name' => 'Git checkout tasks',
-            'description' => 'Allows access to the checkout task',
-            'package' => 'Hosting',
-            'dependencies' => 
-            array (
-              0 => 'hosting_site',
-              1 => 'hosting_git',
-            ),
-            'core' => '7.x',
-            'version' => '7.x-3.0-beta1+2-dev',
-            'project' => 'hosting_git',
-            'datestamp' => '1436057210',
-            'php' => '5.2.4',
-          ),
-          'schema_version' => 0,
-          'project' => 'hosting_git',
-          'version' => '7.x-3.0-beta1+2-dev',
-        ),
-        'hosting_git_pull' => 
-        array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting_git/pull/hosting_git_pull.module',
-          'basename' => 'hosting_git_pull.module',
-          'name' => 'hosting_git_pull',
-          'info' => 
-          array (
-            'name' => 'Git pull tasks',
-            'description' => 'Allows access to the pull task',
-            'package' => 'Hosting',
-            'dependencies' => 
-            array (
-              0 => 'hosting_site',
-              1 => 'hosting_git',
-            ),
-            'core' => '7.x',
-            'version' => '7.x-3.0-beta1+2-dev',
-            'project' => 'hosting_git',
-            'datestamp' => '1436057210',
-            'php' => '5.2.4',
-          ),
-          'schema_version' => '7300',
-          'project' => 'hosting_git',
-          'version' => '7.x-3.0-beta1+2-dev',
-        ),
-        'hosting_git' => 
-        array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting_git/hosting_git.module',
-          'basename' => 'hosting_git.module',
-          'name' => 'hosting_git',
-          'info' => 
-          array (
-            'name' => 'Git integration',
-            'description' => 'Allows Hostmaster managed sites and platforms to use Git.',
-            'package' => 'Hosting',
-            'dependencies' => 
-            array (
-              0 => 'hosting_site',
-            ),
-            'core' => '7.x',
-            'version' => '7.x-3.0-beta1+2-dev',
-            'project' => 'hosting_git',
-            'datestamp' => '1436057210',
-            'php' => '5.2.4',
-          ),
-          'schema_version' => 0,
-          'project' => 'hosting_git',
-          'version' => '7.x-3.0-beta1+2-dev',
-        ),
         'hosting_site' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/site/hosting_site.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/site/hosting_site.module',
           'basename' => 'hosting_site.module',
           'name' => 'hosting_site',
           'info' => 
@@ -1800,18 +1812,18 @@ $options['packages'] = array (
               1 => 'includes/views/handlers/hosting_site_handler_field_status.inc',
               2 => 'includes/views/plugins/hosting_site_plugin_access.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '7301',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_platform' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/platform/hosting_platform.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/platform/hosting_platform.module',
           'basename' => 'hosting_platform.module',
           'name' => 'hosting_platform',
           'info' => 
@@ -1831,18 +1843,18 @@ $options['packages'] = array (
               2 => 'includes/views/handlers/hosting_platform_handler_field_status.inc',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6208',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_subdirs' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/subdirs/hosting_subdirs.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/subdirs/hosting_subdirs.module',
           'basename' => 'hosting_subdirs.module',
           'name' => 'hosting_subdirs',
           'info' => 
@@ -1856,18 +1868,18 @@ $options['packages'] = array (
               1 => 'hosting_alias',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_alias' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/alias/hosting_alias.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/alias/hosting_alias.module',
           'basename' => 'hosting_alias.module',
           'name' => 'hosting_alias',
           'info' => 
@@ -1880,18 +1892,18 @@ $options['packages'] = array (
               0 => 'hosting_site',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6204',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_task' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/task/hosting_task.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/task/hosting_task.module',
           'basename' => 'hosting_task.module',
           'name' => 'hosting_task',
           'info' => 
@@ -1911,18 +1923,18 @@ $options['packages'] = array (
               2 => 'includes/views/handlers/hosting_task_handler_filter_status.inc',
               3 => 'includes/views/handlers/hosting_task_handler_sort_default.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '7000',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_site_data' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/example/site_data/hosting_site_data.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/example/site_data/hosting_site_data.module',
           'basename' => 'hosting_site_data.module',
           'name' => 'hosting_site_data',
           'info' => 
@@ -1935,18 +1947,18 @@ $options['packages'] = array (
               0 => 'hosting_site',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_server_data' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/example/server_data/hosting_server_data.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/example/server_data/hosting_server_data.module',
           'basename' => 'hosting_server_data.module',
           'name' => 'hosting_server_data',
           'info' => 
@@ -1959,18 +1971,18 @@ $options['packages'] = array (
               0 => 'hosting_server',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_example' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/example/hosting_example.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/example/hosting_example.module',
           'basename' => 'hosting_example.module',
           'name' => 'hosting_example',
           'info' => 
@@ -1987,18 +1999,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_example.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_task_gc' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/task_gc/hosting_task_gc.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/task_gc/hosting_task_gc.module',
           'basename' => 'hosting_task_gc.module',
           'name' => 'hosting_task_gc',
           'info' => 
@@ -2011,18 +2023,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_site',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_migrate' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/migrate/hosting_migrate.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/migrate/hosting_migrate.module',
           'basename' => 'hosting_migrate.module',
           'name' => 'hosting_migrate',
           'info' => 
@@ -2040,18 +2052,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_migrate.batch.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_web_cluster' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/web_cluster/hosting_web_cluster.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/web_cluster/hosting_web_cluster.module',
           'basename' => 'hosting_web_cluster.module',
           'name' => 'hosting_web_cluster',
           'info' => 
@@ -2068,18 +2080,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_web_cluster.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_web_pack' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/web_pack/hosting_web_pack.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/web_pack/hosting_web_pack.module',
           'basename' => 'hosting_web_pack.module',
           'name' => 'hosting_web_pack',
           'info' => 
@@ -2096,18 +2108,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_web_pack.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_queued' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/queued/hosting_queued.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/queued/hosting_queued.module',
           'basename' => 'hosting_queued.module',
           'name' => 'hosting_queued',
           'info' => 
@@ -2120,18 +2132,18 @@ $options['packages'] = array (
               0 => 'hosting',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6201',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_quota' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/quota/hosting_quota.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/quota/hosting_quota.module',
           'basename' => 'hosting_quota.module',
           'name' => 'hosting_quota',
           'info' => 
@@ -2145,18 +2157,18 @@ $options['packages'] = array (
               1 => 'hosting_client',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_signup' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/signup/hosting_signup.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/signup/hosting_signup.module',
           'basename' => 'hosting_signup.module',
           'name' => 'hosting_signup',
           'info' => 
@@ -2165,9 +2177,9 @@ $options['packages'] = array (
             'description' => 'A simple signup form that allows users to sign up for a new site.',
             'package' => 'Hosting',
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'dependencies' => 
             array (
             ),
@@ -2175,11 +2187,11 @@ $options['packages'] = array (
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_ssl' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/web_server/ssl/hosting_ssl.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/web_server/ssl/hosting_ssl.module',
           'basename' => 'hosting_ssl.module',
           'name' => 'hosting_ssl',
           'info' => 
@@ -2197,18 +2209,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_ssl.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_nginx_ssl' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/web_server/nginx/ssl/hosting_nginx_ssl.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/web_server/nginx/ssl/hosting_nginx_ssl.module',
           'basename' => 'hosting_nginx_ssl.module',
           'name' => 'hosting_nginx_ssl',
           'info' => 
@@ -2227,18 +2239,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_nginx_ssl.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_nginx' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/web_server/nginx/hosting_nginx.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/web_server/nginx/hosting_nginx.module',
           'basename' => 'hosting_nginx.module',
           'name' => 'hosting_nginx',
           'info' => 
@@ -2255,18 +2267,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_nginx.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_web_server' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/web_server/hosting_web_server.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/web_server/hosting_web_server.module',
           'basename' => 'hosting_web_server.module',
           'name' => 'hosting_web_server',
           'info' => 
@@ -2283,18 +2295,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_web_server.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6002',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_cron' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/cron/hosting_cron.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/cron/hosting_cron.module',
           'basename' => 'hosting_cron.module',
           'name' => 'hosting_cron',
           'info' => 
@@ -2307,18 +2319,18 @@ $options['packages'] = array (
               0 => 'hosting_site',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_package' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/package/hosting_package.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/package/hosting_package.module',
           'basename' => 'hosting_package.module',
           'name' => 'hosting_package',
           'info' => 
@@ -2339,18 +2351,18 @@ $options['packages'] = array (
               3 => 'includes/views/handlers/hosting_package_handler_filter_type.inc',
               4 => 'includes/views/handlers/hosting_package_handler_sort_site_count.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6202',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_clone' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/clone/hosting_clone.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/clone/hosting_clone.module',
           'basename' => 'hosting_clone.module',
           'name' => 'hosting_clone',
           'info' => 
@@ -2364,18 +2376,18 @@ $options['packages'] = array (
               1 => 'hosting_migrate',
             ),
             'core' => '7.x',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_db_server' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/db_server/hosting_db_server.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/db_server/hosting_db_server.module',
           'basename' => 'hosting_db_server.module',
           'name' => 'hosting_db_server',
           'info' => 
@@ -2393,18 +2405,18 @@ $options['packages'] = array (
               0 => 'hosting_db_server.service.inc',
               1 => 'hosting_db_server_handler_filter_db_server_type.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6001',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_client' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/client/hosting_client.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/client/hosting_client.module',
           'basename' => 'hosting_client.module',
           'name' => 'hosting_client',
           'info' => 
@@ -2421,18 +2433,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_client.access.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6004',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_server' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/server/hosting_server.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/server/hosting_server.module',
           'basename' => 'hosting_server.module',
           'name' => 'hosting_server',
           'info' => 
@@ -2453,18 +2465,18 @@ $options['packages'] = array (
               3 => 'includes/views/handlers/hosting_server_handler_field_human_name.inc',
               4 => 'includes/views/handlers/hosting_server_handler_field_status.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '7301',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting_dns' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/dns/hosting_dns.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/dns/hosting_dns.module',
           'basename' => 'hosting_dns.module',
           'name' => 'hosting_dns',
           'info' => 
@@ -2481,18 +2493,18 @@ $options['packages'] = array (
             array (
               0 => 'hosting_dns.service.inc',
             ),
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => 0,
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'hosting' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/aegir/hosting/hosting.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/aegir/hosting/hosting.module',
           'basename' => 'hosting.module',
           'name' => 'hosting',
           'info' => 
@@ -2519,18 +2531,18 @@ $options['packages'] = array (
               1 => 'hosting.test',
             ),
             'configure' => 'admin/hosting',
-            'version' => '7.x-3.0-beta2+2-dev',
+            'version' => '7.x-3.0-beta2+0-dev',
             'project' => 'hosting',
-            'datestamp' => '1436057210',
+            'datestamp' => '1433228183',
             'php' => '5.2.4',
           ),
           'schema_version' => '6207',
           'project' => 'hosting',
-          'version' => '7.x-3.0-beta2+2-dev',
+          'version' => '7.x-3.0-beta2+0-dev',
         ),
         'betterlogin' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/betterlogin/betterlogin.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/betterlogin/betterlogin.module',
           'basename' => 'betterlogin.module',
           'name' => 'betterlogin',
           'info' => 
@@ -2553,7 +2565,7 @@ $options['packages'] = array (
         ),
         'views_export' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/views/views_export/views_export.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/views/views_export/views_export.module',
           'basename' => 'views_export.module',
           'name' => 'views_export',
           'info' => 
@@ -2571,7 +2583,7 @@ $options['packages'] = array (
         ),
         'views' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/views/views.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/views/views.module',
           'basename' => 'views.module',
           'name' => 'views',
           'info' => 
@@ -2908,7 +2920,7 @@ $options['packages'] = array (
         ),
         'views_ui' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/views/views_ui.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/views/views_ui.module',
           'basename' => 'views_ui.module',
           'name' => 'views_ui',
           'info' => 
@@ -2938,7 +2950,7 @@ $options['packages'] = array (
         ),
         'admin_menu_toolbar' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.module',
           'basename' => 'admin_menu_toolbar.module',
           'name' => 'admin_menu_toolbar',
           'info' => 
@@ -2962,7 +2974,7 @@ $options['packages'] = array (
         ),
         'admin_devel' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/admin_menu/admin_devel/admin_devel.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/admin_menu/admin_devel/admin_devel.module',
           'basename' => 'admin_devel.module',
           'name' => 'admin_devel',
           'info' => 
@@ -2989,7 +3001,7 @@ $options['packages'] = array (
         ),
         'admin_menu' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/admin_menu/admin_menu.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/admin_menu/admin_menu.module',
           'basename' => 'admin_menu.module',
           'name' => 'admin_menu',
           'info' => 
@@ -3018,7 +3030,7 @@ $options['packages'] = array (
         ),
         'actions_permissions' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/views_bulk_operations/actions_permissions.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/views_bulk_operations/actions_permissions.module',
           'basename' => 'actions_permissions.module',
           'name' => 'actions_permissions',
           'info' => 
@@ -3027,9 +3039,9 @@ $options['packages'] = array (
             'description' => 'Provides permission-based access control for actions. Used by Views Bulk Operations.',
             'package' => 'Administration',
             'core' => '7.x',
-            'version' => '7.x-3.3',
+            'version' => '7.x-3.2',
             'project' => 'views_bulk_operations',
-            'datestamp' => '1435764542',
+            'datestamp' => '1387798183',
             'dependencies' => 
             array (
             ),
@@ -3037,11 +3049,11 @@ $options['packages'] = array (
           ),
           'schema_version' => 0,
           'project' => 'views_bulk_operations',
-          'version' => '7.x-3.3',
+          'version' => '7.x-3.2',
         ),
         'views_bulk_operations' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/views_bulk_operations/views_bulk_operations.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/views_bulk_operations/views_bulk_operations.module',
           'basename' => 'views_bulk_operations.module',
           'name' => 'views_bulk_operations',
           'info' => 
@@ -3061,17 +3073,44 @@ $options['packages'] = array (
               0 => 'plugins/operation_types/base.class.php',
               1 => 'views/views_bulk_operations_handler_field_operations.inc',
             ),
-            'version' => '7.x-3.3',
+            'version' => '7.x-3.2',
             'project' => 'views_bulk_operations',
-            'datestamp' => '1435764542',
+            'datestamp' => '1387798183',
           ),
           'schema_version' => 0,
           'project' => 'views_bulk_operations',
-          'version' => '7.x-3.3',
+          'version' => '7.x-3.2',
+        ),
+        'libraries' => 
+        array (
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/libraries/libraries.module',
+          'basename' => 'libraries.module',
+          'name' => 'libraries',
+          'info' => 
+          array (
+            'name' => 'Libraries',
+            'description' => 'Allows version-dependent and shared usage of external libraries.',
+            'core' => '7.x',
+            'dependencies' => 
+            array (
+              0 => 'system (>=7.11)',
+            ),
+            'files' => 
+            array (
+              0 => 'tests/libraries.test',
+            ),
+            'version' => '7.x-2.2',
+            'project' => 'libraries',
+            'datestamp' => '1391965716',
+            'php' => '5.2.4',
+          ),
+          'schema_version' => '7200',
+          'project' => 'libraries',
+          'version' => '7.x-2.2',
         ),
         'entity' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/entity/entity.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/entity/entity.module',
           'basename' => 'entity.module',
           'name' => 'entity',
           'info' => 
@@ -3120,7 +3159,7 @@ $options['packages'] = array (
         ),
         'entity_token' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/entity/entity_token.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/entity/entity_token.module',
           'basename' => 'entity_token.module',
           'name' => 'entity_token',
           'info' => 
@@ -3148,7 +3187,7 @@ $options['packages'] = array (
         ),
         'overlay_paths_ui' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/overlay_paths/overlay_paths_ui/overlay_paths_ui.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/overlay_paths/overlay_paths_ui/overlay_paths_ui.module',
           'basename' => 'overlay_paths_ui.module',
           'name' => 'overlay_paths_ui',
           'info' => 
@@ -3172,7 +3211,7 @@ $options['packages'] = array (
         ),
         'overlay_paths' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/overlay_paths/overlay_paths.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/overlay_paths/overlay_paths.module',
           'basename' => 'overlay_paths.module',
           'name' => 'overlay_paths',
           'info' => 
@@ -3195,7 +3234,7 @@ $options['packages'] = array (
         ),
         'ctools_ajax_sample' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/ctools_ajax_sample/ctools_ajax_sample.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/ctools_ajax_sample/ctools_ajax_sample.module',
           'basename' => 'ctools_ajax_sample.module',
           'name' => 'ctools_ajax_sample',
           'info' => 
@@ -3219,7 +3258,7 @@ $options['packages'] = array (
         ),
         'bulk_export' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/bulk_export/bulk_export.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/bulk_export/bulk_export.module',
           'basename' => 'bulk_export.module',
           'name' => 'bulk_export',
           'info' => 
@@ -3243,7 +3282,7 @@ $options['packages'] = array (
         ),
         'ctools_custom_content' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/ctools_custom_content/ctools_custom_content.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/ctools_custom_content/ctools_custom_content.module',
           'basename' => 'ctools_custom_content.module',
           'name' => 'ctools_custom_content',
           'info' => 
@@ -3267,7 +3306,7 @@ $options['packages'] = array (
         ),
         'ctools_access_ruleset' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/ctools_access_ruleset/ctools_access_ruleset.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/ctools_access_ruleset/ctools_access_ruleset.module',
           'basename' => 'ctools_access_ruleset.module',
           'name' => 'ctools_access_ruleset',
           'info' => 
@@ -3291,7 +3330,7 @@ $options['packages'] = array (
         ),
         'views_content' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/views_content/views_content.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/views_content/views_content.module',
           'basename' => 'views_content.module',
           'name' => 'views_content',
           'info' => 
@@ -3322,7 +3361,7 @@ $options['packages'] = array (
         ),
         'ctools_plugin_example' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/ctools_plugin_example/ctools_plugin_example.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/ctools_plugin_example/ctools_plugin_example.module',
           'basename' => 'ctools_plugin_example.module',
           'name' => 'ctools_plugin_example',
           'info' => 
@@ -3349,7 +3388,7 @@ $options['packages'] = array (
         ),
         'page_manager' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/page_manager/page_manager.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/page_manager/page_manager.module',
           'basename' => 'page_manager.module',
           'name' => 'page_manager',
           'info' => 
@@ -3373,7 +3412,7 @@ $options['packages'] = array (
         ),
         'stylizer' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/stylizer/stylizer.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/stylizer/stylizer.module',
           'basename' => 'stylizer.module',
           'name' => 'stylizer',
           'info' => 
@@ -3398,7 +3437,7 @@ $options['packages'] = array (
         ),
         'term_depth' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/term_depth/term_depth.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/term_depth/term_depth.module',
           'basename' => 'term_depth.module',
           'name' => 'term_depth',
           'info' => 
@@ -3422,7 +3461,7 @@ $options['packages'] = array (
         ),
         'ctools' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/ctools/ctools.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/ctools/ctools.module',
           'basename' => 'ctools.module',
           'name' => 'ctools',
           'info' => 
@@ -3453,7 +3492,7 @@ $options['packages'] = array (
         ),
         'bootstrap_tour' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/bootstrap_tour/bootstrap_tour.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/bootstrap_tour/bootstrap_tour.module',
           'basename' => 'bootstrap_tour.module',
           'name' => 'bootstrap_tour',
           'info' => 
@@ -3477,7 +3516,7 @@ $options['packages'] = array (
         ),
         'openidadmin' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/openidadmin/openidadmin.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/openidadmin/openidadmin.module',
           'basename' => 'openidadmin.module',
           'name' => 'openidadmin',
           'info' => 
@@ -3504,7 +3543,7 @@ $options['packages'] = array (
         ),
         'r4032login' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/contrib/r4032login/r4032login.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/contrib/r4032login/r4032login.module',
           'basename' => 'r4032login.module',
           'name' => 'r4032login',
           'info' => 
@@ -3532,7 +3571,7 @@ $options['packages'] = array (
         ),
         'devel_generate' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/developer/devel/devel_generate/devel_generate.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/developer/devel/devel_generate/devel_generate.module',
           'basename' => 'devel_generate.module',
           'name' => 'devel_generate',
           'info' => 
@@ -3564,7 +3603,7 @@ $options['packages'] = array (
         ),
         'devel' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/developer/devel/devel.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/developer/devel/devel.module',
           'basename' => 'devel.module',
           'name' => 'devel',
           'info' => 
@@ -3597,7 +3636,7 @@ $options['packages'] = array (
         ),
         'devel_node_access' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/developer/devel/devel_node_access.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/developer/devel/devel_node_access.module',
           'basename' => 'devel_node_access.module',
           'name' => 'devel_node_access',
           'info' => 
@@ -3626,7 +3665,7 @@ $options['packages'] = array (
         ),
         'devel_debug_log' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/modules/developer/devel_debug_log/devel_debug_log.module',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/modules/developer/devel_debug_log/devel_debug_log.module',
           'basename' => 'devel_debug_log.module',
           'name' => 'devel_debug_log',
           'info' => 
@@ -3651,50 +3690,78 @@ $options['packages'] = array (
       ),
       'themes' => 
       array (
-        'eldir' => 
+        'daas' => 
         array (
-          'filename' => '/var/aegir/hostmaster-7.x-4.x-dev/profiles/hostmaster/themes/aegir/eldir/eldir.info',
-          'basename' => 'eldir.info',
-          'name' => 'Eldir',
+          'filename' => '/var/aegir/hostmaster/profiles/daashost/themes/aegir/daas/daas.info',
+          'basename' => 'daas.info',
+          'name' => 'DaaS',
           'info' => 
           array (
-            'name' => 'Eldir',
-            'description' => 'Companion theme for the Aegir hosting system.',
-            'version' => '7.x-3.0-beta2+0-dev',
+            'name' => 'DaaS',
+            'description' => 'HTML5, SASS, Responsive grid base theme.',
+            'screenshot' => 'images/optimized/screenshot.gif',
             'core' => '7.x',
+            'project' => 'basic',
             'engine' => 'phptemplate',
+            'regions' => 
+            array (
+              'page_top' => 'Page top',
+              'header' => 'Header',
+              'highlighted' => 'Highlighted',
+              'help' => 'Help',
+              'content' => 'Content',
+              'sidebar_first' => 'First sidebar',
+              'sidebar_second' => 'Second sidebar',
+              'footer' => 'Footer',
+              'page_bottom' => 'Page bottom',
+            ),
+            'features' => 
+            array (
+              0 => 'node_user_picture',
+              1 => 'comment_user_picture',
+              2 => 'search',
+              3 => 'favicon',
+            ),
             'stylesheets' => 
             array (
               'all' => 
               array (
-                0 => 'style.css',
+                0 => 'css/default.css',
+                1 => 'css/layout.css',
+                2 => 'css/style.css',
+                3 => 'css/normalize.css',
               ),
-            ),
-            'stylesheets-conditional' => 
-            array (
-              'lt IE 7' => 
+              'print' => 
               array (
-                'all' => 
-                array (
-                  0 => 'ie6.css',
-                ),
+                0 => 'css/print.css',
               ),
             ),
-            'regions' => 
+            'scripts' => 
             array (
-              'sidebar_first' => 'Sidebar top',
-              'sidebar_second' => 'Sidebar bottom',
-              'content' => 'Content',
-              'content_bottom' => 'Content bottom',
-              'header' => 'Header',
-              'footer' => 'Footer',
-              'help' => 'Help',
+              0 => 'js/build/scripts.js',
+              1 => 'js/build/modernizr.js',
+              2 => 'js/custom.js',
             ),
-            'project' => 'eldir',
-            'datestamp' => '1436057208',
+            'settings' => 
+            array (
+              'basic_tabs' => '1',
+              'basic_breadcrumb' => '1',
+              'basic_breadcrumb_home' => '1',
+              'basic_breadcrumb_separator' => '»',
+              'clear_registry' => '0',
+              'basic_ie_enabled' => '0',
+              'basic_ie_enabled_versions' => 
+              array (
+                'ie8' => '0',
+                'ie9' => '0',
+                'ie10' => '0',
+              ),
+            ),
+            'version' => '7.x-4.2',
+            'datestamp' => '1432153992',
           ),
-          'project' => 'eldir',
-          'version' => '7.x-3.0-beta2+0-dev',
+          'project' => 'basic',
+          'version' => '7.x-4.2',
         ),
       ),
     ),
