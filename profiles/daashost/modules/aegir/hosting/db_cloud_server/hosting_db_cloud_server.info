@@ -1,0 +1,9 @@
+name = Database Server 
+description = Allow Hostmaster to configure database cloud servers.
+package = Hosting
+dependencies[] = hosting_db_server
+
+core = 7.x
+files[] = hosting_db_cloud_server.service.inc
+files[] = hosting_db_cloud_server_handler_filter_db_cloud_server_type.inc
+

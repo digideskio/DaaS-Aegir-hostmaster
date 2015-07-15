@@ -1,0 +1,35 @@
+<?php
+/**
+ * @file
+ * Allow Hostmaster to configure database servers.
+ */
+
+/**
+ * Implements hook_hosting_service().
+ */
+function hosting_db_cloud_server_hosting_service() {
+  return array(
+    'mysql_cloud' => 'db',
+  );
+}
+
+/**
+ * Find the database server.
+ */
+function hosting_get_db_cloud_server($hostname) {
+  return hosting_get_db_server($hostname);
+}
+
+/**
+ * Implements hook_nodeapi_TYPE_OP().
+ */
+function hosting_db_cloud_server_nodeapi_server_presave(&$node) {
+  return module_invoke('hosting_db_server','nodeapi_server_presave',$node);
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function hosting_db_cloud_server_views_api() {
+  return module_invoke('hosting_db_server','views_api');
+}
