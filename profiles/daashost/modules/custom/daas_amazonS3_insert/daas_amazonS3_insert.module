@@ -37,24 +37,3 @@ function daas_amazonS3_insert_libraries_info() {
     )
   );
 }
-
-/**
- * Implements hook_menu().
- */
-function daas_amazonS3_insert_menu() {
-  $items['admin/config/services/awsconfig'] = array(
-    'title' => 'Amazon AWS Configuration',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array(
-      'aws_credentials_config_form'
-    ),
-    'access arguments' => array(
-      'administer users'
-    ),
-    'type' => MENU_NORMAL_ITEM,
-    
-    'file' => 'daas_amazonS3_insert.admin.inc'
-  );
-  
-  return $items;
-}
