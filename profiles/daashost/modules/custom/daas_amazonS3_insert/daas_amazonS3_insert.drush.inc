@@ -11,7 +11,6 @@
 function drush_daas_amazonS3_insert_post_hosting_task($task) {
 	$task = &drush_get_context ( 'HOSTING_TASK' );
 	
-// 	$bucket = variable_get ( 'daas_amazonS3_insert_aws_r53_bucket_name' );
 	$bucket = variable_get ( 'aws_opsworks_s3_bucket' );
 	
 	if ($task->ref->type == "site" && $task->task_type == "install") {
@@ -35,20 +34,14 @@ function drush_daas_amazonS3_insert_post_hosting_task($task) {
  * @return \Aws\static
  */
 function _create_s3_object() {
-// 	$region = variable_get ( 'daas_amazonS3_insert_aws_r53_region' );
 	$region = 'us-west-1';
-// 	$aws_access_key_id = variable_get ( 'daas_amazonS3_insert_aws_r53_key_id' );
-// 	$aws_secret_key = variable_get ( 'daas_amazonS3_insert_aws_r53_secret_key' );
 	
 	$aws_library = _daas_load_awssdk2_library ();
-// 	$credentials = new Aws\Credentials\Credentials ( $aws_access_key_id, $aws_secret_key );
 	
 	$client_config = array (
-// 			'credentials' => $credentials,
-			'version' => '2006-03-01' 
+			'version' => '2006-03-01',
+			'region' => $region 
 	);
-	$client_config ['region'] = $region;
-	
 	$s3 = Aws\S3\S3Client::factory ( $client_config );
 	
 	return $s3;
@@ -171,20 +164,22 @@ function _insert_platform_s3_bucket($task, $bucket) {
  * Deletes site config and files from S3 bucket
  */
 function _delete_site_s3_bucket($task, $bucket) {
-	$site_subdomain = $task->ref->title;
-	
-	$platform = node_load ( $task->ref->platform );
-	$platform_title = $platform->hosting_name;
-	
-	$sites_upload_dir = "platforms/" . $platform_title . "/sites/" . $site_subdomain;
-	
-	$file = "config/server_master/apache/vhost.d/{$site_subdomain}";
-	
-	if (_delete_file_s3_bucket ( $bucket, $file )) {
-		dpm ( "S3 Delete config successful." );
+	if (! empty ( $bucket )) {
+		$site_subdomain = $task->ref->title;
+		
+		$platform = node_load ( $task->ref->platform );
+		$platform_title = $platform->hosting_name;
+		
+		$sites_upload_dir = "platforms/" . $platform_title . "/sites/" . $site_subdomain;
+		
+		$file = "config/server_master/apache/vhost.d/{$site_subdomain}";
+		
+		if (_delete_file_s3_bucket ( $bucket, $file )) {
+			dpm ( "S3 Delete config successful." );
+		}
+		
+		_delete_directory_s3_bucket ( $bucket, $sites_upload_dir );
 	}
-	
-	_delete_directory_s3_bucket ( $bucket, $sites_upload_dir );
 }
 
 /**
@@ -194,13 +189,15 @@ function _delete_site_s3_bucket($task, $bucket) {
  * @param string $bucket        	
  */
 function _delete_platform_s3_bucket($task, $bucket) {
-	$platform_title = $task->ref->hosting_name;
-	
-	$s3_platform_upload_path = 'config/servermaster/apache/platform.d/' . $platform_title . '.conf';
-	if (_delete_file_s3_bucket ( $bucket, $s3_platform_upload_path )) {
-		dpm ( "S3 Delete platform config successful." );
+	if (! empty ( $bucket )) {
+		$platform_title = $task->ref->hosting_name;
+		
+		$s3_platform_upload_path = 'config/servermaster/apache/platform.d/' . $platform_title . '.conf';
+		if (_delete_file_s3_bucket ( $bucket, $s3_platform_upload_path )) {
+			dpm ( "S3 Delete platform config successful." );
+		}
+		
+		$s3_platform_upload_dir = "platforms/" . $platform_title;
+		_delete_directory_s3_bucket ( $bucket, $s3_platform_upload_dir );
 	}
-	
-	$s3_platform_upload_dir = "platforms/" . $platform_title;
-	_delete_directory_s3_bucket ( $bucket, $s3_platform_upload_dir );
 }
