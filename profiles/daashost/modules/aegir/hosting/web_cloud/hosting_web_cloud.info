@@ -1,0 +1,7 @@
+name = Web Cloud
+description = Allow hostmaster to configure web servers in the cloud.
+package = Hosting
+dependencies[] = hosting_web_server
+
+core = 7.x
+files[] = hosting_web_cloud.service.inc
