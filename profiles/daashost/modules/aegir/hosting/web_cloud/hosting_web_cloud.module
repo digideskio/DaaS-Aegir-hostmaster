@@ -9,19 +9,6 @@
  */
 function hosting_web_cloud_hosting_service() {
   return array(
-    'cloud' => 'http',
+    'apache_cloud' => 'http',
   );
 }
-
-/**
- * @todo Please document this function.
- * @see http://drupal.org/node/1354
- */
-function hosting_web_cloud_hosting_service_type() {
-  return array(
-    'http' => array(
-      'title' => t('Cloud'),
-    ),
-  );
-}
-

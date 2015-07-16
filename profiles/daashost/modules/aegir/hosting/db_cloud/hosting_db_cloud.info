@@ -4,6 +4,5 @@ package = Hosting
 dependencies[] = hosting_db_server
 
 core = 7.x
-files[] = hosting_db_cloud_server.service.inc
-files[] = hosting_db_cloud_server_handler_filter_db_cloud_server_type.inc
+files[] = hosting_db_cloud.service.inc
 
