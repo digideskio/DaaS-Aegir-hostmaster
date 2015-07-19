@@ -119,7 +119,7 @@ function daashost_bootstrap() {
   $node = new stdClass();
   $node->uid = 1;
   $node->type = 'platform';
-  $node->title = 'daashost';
+  $node->title = 'hostmaster';
   $node->publish_path = d()->root;
   $node->makefile = '';
   $node->verified = 1;
@@ -177,7 +177,7 @@ function daashost_bootstrap() {
   $node->db_server = $db_node->nid;
   $node->profile = $profile_id;
   $node->import = true;
-  $node->hosting_name = 'daashost';
+  $node->hosting_name = 'hostmaster';
   $node->site_status = 1;
   $node->verified = 1;
   $node->status = 1;
