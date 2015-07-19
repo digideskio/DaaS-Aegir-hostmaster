@@ -149,7 +149,7 @@ function _insert_platform_s3_bucket($task, $bucket) {
 	if (! empty ( $bucket )) {
 		$platform_title = $task->ref->hosting_name;
 		$config_to_upload = DRUPAL_ROOT . '/../config/server_master/apache/platform.d/' . $platform_title . '.conf';
-		$s3_platform_upload_path = 'config/servermaster/apache/platform.d/' . $platform_title . '.conf';
+		$s3_platform_upload_path = 'config/server_master/apache/platform.d/' . $platform_title . '.conf';
 		
 		_insert_file_s3_bucket ( $bucket, $config_to_upload, $s3_platform_upload_path );
 		
@@ -192,7 +192,7 @@ function _delete_platform_s3_bucket($task, $bucket) {
 	if (! empty ( $bucket )) {
 		$platform_title = $task->ref->hosting_name;
 		
-		$s3_platform_upload_path = 'config/servermaster/apache/platform.d/' . $platform_title . '.conf';
+		$s3_platform_upload_path = 'config/server_master/apache/platform.d/' . $platform_title . '.conf';
 		if (_delete_file_s3_bucket ( $bucket, $s3_platform_upload_path )) {
 			dpm ( "S3 Delete platform config successful." );
 		}
