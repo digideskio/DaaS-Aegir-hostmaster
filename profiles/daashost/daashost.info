@@ -27,6 +27,10 @@ dependencies[] = hosting_server
 ;dependencies[] = hosting_cron
 ;dependencies[] = hosting_migrate
 
+;; Aegir custom ;;
+dependencies[] = hosting_web_cloud
+dependencies[] = hosting_db_cloud
+
 ;; Drupal contrib ;;
 dependencies[] = admin_menu
 dependencies[] = betterlogin
