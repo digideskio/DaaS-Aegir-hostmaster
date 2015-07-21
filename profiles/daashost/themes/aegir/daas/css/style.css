@@ -1111,7 +1111,7 @@ body:before {
 }
 @media (min-width: 980px){
   #hosting-task-list, #hosting-task-list .form-item {
-    margin-left:5%;
+    margin-left:1%;
   }
 }
 /** Theme fixes **/
@@ -1120,7 +1120,7 @@ body:before {
 }
 
 .page-node #hosting-task-list, #hosting-task-list .form-item {
-	width: auto !important;
+	width: 30% !important;
 }
 
 .page-node #content .views-table, #content #hosting-task-list table {
