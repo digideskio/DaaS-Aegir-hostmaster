@@ -460,6 +460,9 @@ table td,table td a,.views-table td,.views-table td a,.views-table td em,.hostin
 .view-hosting-task-list tr.hosting-success .hosting-status span{
   background: #5BC85E;
 }
+.view-hosting-task-list tr.hosting-warning .hosting-status span{
+  background: #fe8 !important;
+}
 .view-hosting-task-list tr.hosting-error .hosting-status span{
   background: #D22C1C;
 }
@@ -478,7 +481,7 @@ table td,table td a,.views-table td,.views-table td a,.views-table td em,.hostin
   padding-left: 32px !important;
   width: 80px;
 }
-.view-hosting-task-list  tr.hosting-success .hosting-status,.view-hosting-task-list tr.hosting-queue .hosting-status,.view-hosting-task-list tr.hosting-error .hosting-status{
+.view-hosting-task-list tr.hosting-warning .hosting-status, .view-hosting-task-list  tr.hosting-success .hosting-status,.view-hosting-task-list tr.hosting-queue .hosting-status,.view-hosting-task-list tr.hosting-error .hosting-status{
   background: none;
 }
 #views-form-hosting-site-list-page-sites td.hosting-status a{
@@ -919,6 +922,15 @@ body:before {
   pointer-events: none;
   z-index: -1;
 }
+.item-list ul li {
+  clear:left;
+}
+#sidebar-second .view-hosting-task-list tr.hosting-warning .hosting-actions {
+  background: url("../images/icons/icon-warning.png") no-repeat 0 22px !important;
+  padding-left: 32px !important;
+  width: 80px;
+	
+}
 @media screen and (min-width: 20em) {
   body:before {
   /*
@@ -1096,6 +1108,64 @@ body:before {
   .views-exposed-form .views-widget {
       width: 55%;
   }
+}
+@media (min-width: 980px){
+  #hosting-task-list, #hosting-task-list .form-item {
+    margin-left:5%;
+  }
+}
+/** Theme fixes **/
+.page-node .two-sidebars #content {
+	width: 56% !important;
+}
+
+.page-node #hosting-task-list, #hosting-task-list .form-item {
+	width: auto !important;
+}
+
+.page-node #content .views-table, #content #hosting-task-list table {
+	width: 100% !important;
+}
+
+.page-node .hosting-info-list {
+	float: left;
+}
+
+.page-node #sidebar-second:last-child {
+	position: auto !important;
+}
+
+@media (min-width: 767px)  and (max-width: 980px){
+.page-node #hosting-task-list, #hosting-task-list .form-item {
+    width: 90% !important;
+}
+#sidebar-second:last-child {
+	position:static;
+	float:left;
+	clear:left;
+	margin-left:19.275%;
+	width:auto;
+
+}
+ .two-sidebars #content {
+ 	width:75%;
+ }
+}
+@media (min-width: 980px)  and (max-width: 1060px){
+	.page-node #content .views-table, #content #hosting-task-list table {
+	width: 100% !important;
+}
+
+	
+}
+@media (min-width: 980px)  and (max-width: 1138px){
+	.page-node .hosting-info-list {
+    float: left;
+    width: 30% !important;
+}
+}
+.sticky-header {
+	z-index:1;
 }
 
 /*# sourceMappingURL=style.css.map */
