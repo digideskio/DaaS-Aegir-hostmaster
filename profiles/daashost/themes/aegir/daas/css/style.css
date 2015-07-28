@@ -413,7 +413,7 @@ abbr {
   margin-left: 50px;
 }
 #admin-menu .dropdown .admin-menu-icon img{
-  width: 16px !important;
+  width: auto !important;
   height: 16px !important;
 }
 #admin-menu .dropdown .admin-menu-icon a{
