@@ -50,6 +50,7 @@
 
   <div id="main">
     <div class="container">
+   
       <?php if ($page['sidebar_first']): ?>
         <aside id="sidebar-first">
           <?php print render($page['sidebar_first']); ?>
@@ -87,21 +88,18 @@
             <!-- </div> /#content-header -->
           <?php endif; ?>
 
-          <div id="content-area">
-            <?php print render($page['content']) ?>
+         <div id="content-area">
+            <div id="content-left">
+            	<?php print render($page['content']) ?>
+            </div>
+            <div id="content-right-area">
+          		<?php print render($page['content_right']) ?>
+          	</div>
           </div>
-
           <?php print $feed_icons; ?>
 
       </section> <!-- /content-inner /content -->
 
-
-
-      <?php if ($page['sidebar_second']): ?>
-        <aside id="sidebar-second">
-          <?php print render($page['sidebar_second']); ?>
-        </aside>
-      <?php endif; ?> <!-- /sidebar-second -->
     </div>
   </div> <!-- /main -->
 

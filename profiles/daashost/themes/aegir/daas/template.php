@@ -100,6 +100,9 @@ function daas_preprocess_html(&$vars) {
         'preprocess' => FALSE));
     }
   }
+  if (! empty($vars['page']['content_right'])) {
+  	$vars['classes_array'][] = 'content-right';
+  }
 }
 
 function daas_preprocess_page(&$vars, $hook) {

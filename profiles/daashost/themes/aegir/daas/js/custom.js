@@ -17,7 +17,13 @@ jQuery(document).ready(function() {
    sidebarsecondHeight =  parseFloat(jQuery("#sidebar-second").css("height"));
    var heightArray = [sidebarHeight,contentHeight,sidebarsecondHeight];
    var max = Math.max.apply(Math, heightArray);
-   jQuery("#sidebar-first").css("height",max)
+   jQuery("#sidebar-first").css("height",max);
+
+   if( !jQuery.trim( jQuery('#content-right-area').html() ).length ) {
+    jQuery(".page-hosting-sites .responsive-table").css("width","100%");
+    jQuery("#content-left").css("width","100%");
+    jQuery("#edit-select").css("width","50%");
+   }
 });
 
 jQuery( window ).resize(function() {
