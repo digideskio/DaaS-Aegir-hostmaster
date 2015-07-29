@@ -1,6 +1,7 @@
 var sidebarHeight;
 var contentHeight;
 var sidebarsecondHeight;
+var contHeight = 0;
 
 jQuery(document).ready(function() {
   var navHeight = jQuery("#admin-menu").height();
@@ -24,6 +25,13 @@ jQuery(document).ready(function() {
     jQuery("#content-left").css("width","100%");
     jQuery("#edit-select").css("width","50%");
    }
+
+   if(jQuery(window).width() >= 980){
+    var contHeight = jQuery("#content").height();
+    jQuery("#sidebar-first").css("min-height",contHeight);
+   } else {
+    jQuery("#sidebar-first").css("min-height","inherit");
+   }
 });
 
 jQuery( window ).resize(function() {
@@ -38,5 +46,12 @@ jQuery( window ).resize(function() {
     topPos = topPos-navHeight;
     jQuery("#page #sidebar-second").css("top",topPos+'px');
   }
+
+  if(jQuery(window).width() >= 980){
+    var contHeight = jQuery("#content").height();
+    jQuery("#sidebar-first").css("min-height",contHeight);
+   } else {
+    jQuery("#sidebar-first").css("min-height","inherit");
+   }
 
 });
