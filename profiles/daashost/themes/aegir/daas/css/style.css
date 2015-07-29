@@ -956,7 +956,7 @@ ul.secondary li {
 }
 
 #content-right-area {
-  max-width:35%;
+  max-width:30%;
 }
 
 
@@ -1221,6 +1221,9 @@ body:before {
   }
   .hosting-service-info, #hosting-server-info, #hosting-client-info, #hosting-platform-info, #hosting-package-info, #hosting-site-info, #hosting-task-info, #hosting-site-edit-info, #hosting-task-list {
     width: 100%;
+  }
+  #content-right-area {
+    max-width:100%;
   }
 }
 @media (max-width: 767px){
