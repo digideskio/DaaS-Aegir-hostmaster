@@ -54,7 +54,7 @@ body:before {
   width: auto;
 }
 #content-left {
-  width: 60.542%;
+  width: 65%;
   float: left;
 }
 /*.admin-menu #content-left {
@@ -76,7 +76,7 @@ body:before {
   width: 100%;
 }
 .page-hosting-sites .responsive-table{
-  width: 60.542%;
+  width: 65%;
 }
 .page-hosting-sites #edit-select{
   width: 50%;
@@ -956,7 +956,8 @@ ul.secondary li {
 }
 
 #content-right-area {
-  max-width:30%;
+  width:33%;
+  max-width:33%;
 }
 
 
